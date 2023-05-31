@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <!-- css file link -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- script file link -->
+    <script defer src="index.js"></script>
+    <!-- font awssome link -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="weather_ctn" id="main_ctnnn">
+      <div class="search_ctn">
+        <input type="text" class="city_search" placeholder="Search city" />
+        <i class="fa fa-thin fa-magnifying-glass icons"></i>
+      </div>
+      <div class="detailed_climate" id="detailed_cliamte_ctn">
+        <h1 class="location_name" id="head1"></h1>
+        <div class="bottom_ctn">
+          <div class="climate_ctn">
+            <img
+              src="cloud.png"
+              alt="cloud image"
+              class="climate_image"
+              id="climate_img"
+            />
+            <h1 class="climate_degree">30<sup>°C</sup></h1>
+            <h1 class="climate_head" id="climate_main"></h1>
+          </div>
+        </div>
+        <div class="climate_details_ctn">
+          <div class="humidity_ctn">
+            <h1 class="humidity_head">Humidity</h1>
+            <h2 class="humidity_scale" id="humdty_guage">22</h2>
+          </div>
+          <div class="pressure_ctn">
+            <h1 class="presure_head">Pressure</h1>
+            <h2 class="Pressure_scale" id="pres_guage">22</h2>
+          </div>
+          <div class="wind_ctn">
+            <h1 class="wind_head">Wind</h1>
+            <h2 class="wind_scale" id="wind_guage">22</h2>
+          </div>
+        </div>
+      </div>
+      <div class="notfount_ctn" id="pagenotfound_ctn">
+        <h1 class="notfound_head" id="pagenotfound_msg"></h1>
+        <img src="notfound.avif" alt="page not found" class="notfound_img" />
+      </div>
+    </div>
+  </body>
+</html>
